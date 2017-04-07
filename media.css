@@ -44,7 +44,7 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		position: relative;
-		background: url(../img/kids_3.png) no-repeat left bottom;
+		background: url(kids_3.png) no-repeat left bottom;
 		background-size: contain;
 	}
 	.header-main__logo{
