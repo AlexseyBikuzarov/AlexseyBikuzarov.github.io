@@ -124,7 +124,7 @@ body {
   display: inline-block;
   margin-top: 5px;
   width: 30%;
-  background: #fff url(../img/kids_1.png) no-repeat bottom;
+  background: #fff url(kids_1.png) no-repeat bottom;
   background-size: 120px 224px; }
 
 .categories-car-seats__header {
@@ -144,7 +144,7 @@ body {
     margin-top: -20px;
     margin-right: 10px;
     margin-bottom: -8px;
-    background: url(..//img/sprite_header_catalog.png);
+    background: url(/sprite_header_catalog.png);
     background-position: 115px 43px; }
 
 .car-seats {
