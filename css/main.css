@@ -91,6 +91,10 @@ body {
 .slider-container {
   position: relative; }
 
+.slider__img {
+  width: 100%;
+  height: auto; }
+
 .slider {
   max-width: 100%;
   position: relative;
@@ -439,6 +443,10 @@ body {
   background-color: #FFFF00;
   padding: 0 45px 0 45px; }
 
+.footer-main__logo {
+  width: 100px;
+  height: 36px; }
+
 .footer-main__text {
   font-size: 20px; }
 
@@ -561,6 +569,10 @@ body {
           align-items: baseline;
   margin-left: 10px;
   margin-bottom: 10px; }
+
+.basket-box__photo {
+  width: 70px;
+  height: 70px; }
 
 .basket-box__name {
   display: inline-block;
