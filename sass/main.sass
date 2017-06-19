@@ -1,0 +1,504 @@
+$font: 'Comfortaa', cursive
+$gradient: linear-gradient(to bottom, #ffff00 0%,#ffff00 30%,#ffff70 88%)
+$bg_grey: #E9E9E9
+$bg_yellow: #FFFF00
+$bg_yellow_hover: #FFF600
+
+@mixin button
+	border: none
+	background: $bg_yellow
+	font: 700 16px $font
+	padding: 8px 20px
+	cursor: pointer
+	&:hover
+		background-color: $bg_yellow_hover
+		box-shadow: 2px 2px 3px #9B9B9B
+	&:focus
+		outline: none
+body
+	color: #000
+	font-family: $font
+	background-color: #fff
+	line-height: 1.2
+	font-size: 14px
+.header-main
+	display: flex
+	justify-content: space-between
+	align-items: center
+	background-color: white
+	color: #000
+	padding: 0 45px 5px 45px
+.header-main__logo
+	width: 200px
+	height: 73px
+.header-main__text
+	font: 700 23px $font
+	text-align: center
+	margin: 0
+.header-main__box-contact
+	display: flex
+	flex-direction: column
+	align-items: center
+.header-main__tel
+	font: 400 25px $font
+	padding-right: 10px
+.header-main__tel_icon
+	font-size: 25px
+	font-weight: 700
+	color: red
+.header-main__button-tel
+	@include button
+.header-main__button-tel_m
+	display: none
+	position: fixed
+	z-index: 60
+	bottom: 30px
+	right: 30px
+	cursor: pointer
+	width: 50px
+	height: 50px
+	opacity: 0.7
+	border-radius: 50px
+	background: #FFBA16 url(..//img/trubka.png) no-repeat center
+	border: 2px solid #fff
+	&:hover
+		opacity: 1
+		border: 4px solid #fff
+		bottom: 28px
+		right: 28px
+.slider-container
+	position: relative
+.slider
+	max-width: 100%
+	position: relative
+	background-color: $bg_grey
+.dot-box
+	position: absolute
+	display: flex
+	bottom: 5px
+	right: 5px
+	margin-left: 15px
+.dot
+	display: block
+	margin: 1px
+	width: 12px
+	height: 12px
+	border-radius: 12px
+	border: 1px solid #717171
+	background: #fff
+	opacity: 0.8
+	&:hover
+		background-color: #717171
+.prev,.next
+	cursor: pointer
+	position: absolute
+	top: 50%
+	width: auto
+	margin-top: -25px
+	padding: 16px
+	font-weight: bold
+	font-size: 50px
+	color: #E9E9E9
+	transition: 0.4s ease
+	border-radius: 0 3px 3px 0
+	&:hover
+		background-color: rgba(0,0,0,0.4)
+.next
+	right: 0
+	border-radius: 3px 0 0 3px
+.active__slide
+	background-color: #717171
+.slider-info-container
+	position: absolute
+	left: 50%
+	margin-left: -155px
+	top: 50%
+	margin-top: -155px
+	display: flex
+	justify-content: center
+	flex-direction: column
+	width: 250px
+	height: 250px
+	background: #000000
+	padding: 30px
+	color: #fff
+	opacity: 0.5
+	text-align: center
+	border-radius: 200px
+.slider-info-container__header
+	margin: 0
+	font-size: 50px
+.slider-info-container__info
+	font-size: 16px
+.catalog
+	display: flex
+	flex-wrap: wrap
+	background: $bg_grey
+.catalog__header
+	width: 100%
+	text-align: left
+	background: $bg_yellow
+.catalog__header__car-seats
+	display: inline-block
+	margin: 0
+	padding: 15px
+	color: #000
+	background: #fff
+	font-weight: 700
+	font-size: 15px
+	text-align: center
+	&::before
+		content: ' '
+		display: inline-block
+		width: 35px
+		height: 35px
+		margin-top: -20px
+		margin-right: 10px
+		margin-bottom: -8px
+		background:  url(..//img/sprite_header_catalog.png)
+		background-position: 115px 43px
+.categories
+	display: inline-block
+	margin-top: 5px
+	margin-bottom: 10px
+	width: 30%
+	background: #fff;
+.catalog__header
+	display: flex
+	justify-content: space-between
+	align-items: center
+.sorting-price__box
+	text-align: right
+	background: #fff
+	margin-top: 5px
+	margin-left: 1.5%
+	margin-right: 2.5%
+	padding: 5px 0
+	box-shadow: 3px 3px 3px #B6B6B6
+.sorting-price__text
+	font-size: 17px
+	margin: 0
+	margin-right: 3px
+.sorting-price
+	margin: 1px
+	background: #E9E9E9
+	border: none
+	font-size: 15px
+	padding-top: 3px
+	padding-bottom: 4px
+	padding-right: 7px
+	padding-left: 7px
+	margin-right: 5px
+	border-radius: 15px
+	&:focus
+		outline: none
+	&:last-child
+		margin-left: 10px
+.carSeats-filter-selected
+	background: #FFFF00
+.sorting-price__text
+	display: inline-block
+.car-seats
+	list-style: none
+.car-seats__item
+	cursor: pointer
+	margin-bottom: 20px
+	margin-right: 10px
+	padding: 3px
+	position: relative
+	text-decoration: none
+	color: #0A1146
+	&:hover
+		color: #FF4C4C
+	&:after
+		content: " "
+		display: block
+		height: 2px
+		width: 0
+		background: #FF4C4C
+		transition: width .3s ease-in-out
+	&:hover:after
+		width: 100%
+	&:focus:after
+		width: 100%
+
+.car-seats__item
+	margin-bottom: 20px
+	position: relative
+.car-seats__item-h
+	display: block
+	font-size: 20px
+.car-seats__item-description
+	font-size: 15px
+.pack-prod
+	width: 70%
+	font-size: 0
+	background: $bg_grey
+.pack-prod__card
+	display: flex
+	display: inline-block
+	justify-content: space-around
+	align-items: center
+	position: relative
+	padding-top: 5px
+	background: #fff
+	text-align: center
+	font-size: 10px
+	box-sizing: border-box
+	width: 30%
+	margin: 1.5%
+	box-shadow: 3px 3px 3px #B6B6B6
+.pack-prod__gipmaterial-photo
+	width: 70px
+	height: 70px
+	position: absolute
+	top: -2px
+	left: -2px
+.pack-prod__main-photo
+	width: 200px
+	height: 200px
+.pack-prod__info,.pack-prod__info_m
+	display: flex
+	flex-direction: column
+	justify-content: space-between
+.pack-prod__h,.pack-prod__h_m
+	font-size: 18px
+	margin: 0
+	margin-bottom: 10px
+	padding: 0
+.pack-prod__description,.pack-prod__description_m
+	margin: 0 10px
+	margin-bottom: 5px
+	font-size: 12px
+	text-align: center
+.pack-prod__price,.pack-prod__price_m
+	font-size: 23px
+	font-weight: 700
+.pack-prod__more,.pack-prod__buy_m
+	@include button
+	font-size: 20px
+	width: 100%
+.about-store
+	background-color: #FFF
+	color: #000
+	text-align: center
+	margin-top: 10px
+.about-store__h
+	text-align: center
+	display: inline-block
+.about-store__desk
+	text-align: center
+	padding: 0 45px 0 45px
+.about-store__img
+	width: 50%
+.about-store__maps-wrapper
+	box-shadow: 0 0 20px 5px #B6B6B6
+	width: 90%
+	margin-left: 5%
+	margin-right: 5%
+	margin-bottom: 10px
+.footer-main
+	display: flex
+	justify-content: space-between
+	align-items: center
+	background-color: $bg_yellow
+	padding: 0 45px 0 45px
+.footer-main__text
+	font-size: 20px
+.footer-main__box-contact
+	text-align: center
+.footer-main__button-tel
+	@include button
+	background-color: #FFF
+	&:hover
+		background-color: #F2F2F2
+.bg-modal, .bg-basket
+	background: #979797
+	position: fixed
+	left: 0
+	top: 0
+	opacity: 0.8
+	width: 100%
+	height: 100%
+	z-index: 100
+.bg-basket
+	z-index: 101
+.modal-window, .basket-modal
+	position: fixed
+	background: #fff
+	box-shadow: 0px 0px 4px 1px #696969
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	z-index: 101
+.modal-window__close, .basket-modal__close
+	position: absolute
+	top: 5px
+	right: 0
+	font-size: 27px
+	font-weight: 800
+	width: 30px
+	height: 30px
+	color: #636363
+	cursor: pointer
+	&:hover
+		color: #3F3F3F
+.modal-window__header, .basket-modal__header
+	text-align: center
+	background: $gradient
+	margin: 0
+	padding: 20px 0
+	font-size: 22px
+	margin-bottom: 5px
+.modal-window__form, .basket-modal__form
+	padding-left: 10px
+	padding-right: 10px
+.modal-window__input-header, .basket-modal__input-header
+	margin: 0
+	padding: 0
+	padding-left: 10px
+	font-size: 17px
+	font-weight: 700
+.modal-window__input-name, .modal-window__input-mobile, .basket-modal__input-name, .basket-modal__input-mobile
+	width: 100%
+	height: 38px
+	box-sizing: border-box
+	padding-left: 5px
+	margin-top: 10px
+	margin-bottom: 15px
+	border: none
+	background: #FEFF87
+.modal-window__input-button, .basket-modal__input-button
+	@include button
+	margin-top: 20px
+	margin-bottom: 10px
+	width: 100%
+.modal-window, .bg-modal, .basket-modal, .bg-basket
+	display: none
+.basket-box
+	display: flex
+	align-items: baseline
+	margin-left: 10px
+	margin-bottom: 10px
+.basket-box__photo
+	
+.basket-box__name
+	display: inline-block
+	margin: 0
+	margin-left: 10px
+	font-size: 20px
+.active
+	display: block
+.pack-prod_m_close
+	position: absolute
+	z-index: 50
+	font-size: 30px
+	color: #B0B0B0
+	cursor: pointer
+	right: 0
+	top: 0
+	padding: 20px
+	&:hover
+		color: #CACACA
+.pack-prod_m
+	background: #979797
+	position: fixed
+	display: flex
+	justify-content: center
+	align-items: center
+	top: 50%
+	bottom: 50%
+	z-index: 100
+
+.pack-prod__card_m
+	position: relative
+	display: flex
+	justify-content: space-between
+	background-color: #FFF
+	padding: 10px
+.pack-prod__photo-container
+	position: relative
+	margin: 5px
+.pack-prod__main-photo_m
+	box-sizing: border-box 
+	width: 350px
+	height: 350px
+	border: 1px solid #D8D8D8;
+.min-img
+	box-sizing: border-box 
+	width: 50px
+	height: 50px
+	padding: 2px
+	margin: 2px
+	border: 1px solid #D8D8D8
+	&:first-child
+		margin-left: 0
+.min-img_active
+	border: 1px solid #545454
+.pack-prod__h_m
+	font-size: 25px
+	text-align: center
+.pack-prod__block-info_m
+	display: flex
+	flex-direction: row
+	justify-content: center
+.pack-prod__description_m, .pack-prod__special_m
+	margin: 0
+	margin-bottom: 20px
+	padding: 0
+	font-weight: 700
+	font-size: 16px
+	line-height: 1.2
+	text-align: left
+	li
+		font-weight: 500
+		font-size: 13px
+		line-height: 1.4
+		list-style-type: disc
+		text-align: left
+		margin-left: 15px
+		&:first-child
+			margin-top: 10px
+.pack-prod__block-buy_m
+	display: flex
+	flex-direction: row
+	justify-content: space-between
+
+.pack-prod__price_m
+	background: linear-gradient(to bottom, #ff3019 0%,#cf0404 100%)
+	text-align: center
+	padding: 5px
+	color: #F2F2F2
+	width: 100%		
+.pack-prod__buy_m
+	position: relative
+	width: 50%
+	text-align: center
+	z-index: 100
+	&:hover
+		box-shadow: none
+	&:before
+		position: absolute
+		content: " "
+		border-top: 19px solid $bg_yellow
+		border-bottom: 20px solid $bg_yellow
+		border-left: 20px solid transparent
+		left: -20px
+		top: 0
+	&:hover:before
+		border-top: 19px solid $bg_yellow_hover
+		border-bottom: 20px solid $bg_yellow_hover
+		border-left: 20px solid transparent
+	&:after
+		content: " "
+		width: 100%
+		height: 100%
+		border-left: 20px solid transparent
+		position: absolute
+		top: 0
+		left: -20px
+	&:hover:after
+		box-shadow: 2px 2px 3px #9B9B9B
+.hidden
+	display: none
+

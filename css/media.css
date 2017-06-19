@@ -1,0 +1,344 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+@media only screen and (max-width : 1055px) {
+	.header-main__text{
+		font-size: 25px;
+		text-align: center;
+	}
+	.pack-prod__main-photo_m{
+		width: 250px;
+		height: 250px;
+	}
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.header-main__logo{
+		width: 20%;
+		height: auto;
+	}
+	.header-main__text{
+		font-size: 23px;
+	}
+	.pack-prod__gipmaterial-photo{
+		width: 50px;
+		height: 50px;
+	}
+	.pack-prod__main-photo{
+		width: 150px;
+		height: 150px;
+	}
+}
+@media only screen and (max-width : 900px) {
+	.header-main__text{
+		font-size: 20px;
+	}
+	.footer-main__text{
+		font-size: 14px;
+	}
+}
+@media only screen and (max-width : 880px) {
+	.header-main__tel{
+		font-size: 17px;
+	}
+	.header-main__button-tel{
+		font-size: 15px;
+		padding: 5px 5px;
+	}
+	.pack-prod__main-photo_m{
+		width: 200px;
+		height: 200px;
+	}
+	.pack-prod__gipmaterial-photo{
+		width: 70px;
+		height: 70px;
+	}
+	.pack-prod__main-photo{
+		width: 200px;
+		height: 200px;
+	}
+	.sorting-price__box{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.categories{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-ms-align-items: center;
+		align-items: center;
+		width: 100%;
+		background-image: none;
+		margin-top: 5px;
+		margin-bottom: 0;
+	}
+	.categories-car-seats__header{
+		display: inline-block;
+		border: none;
+		border-right: 5px solid #E9E9E9;
+		padding: 5px 0;
+		font-size: 21px;
+	}
+	.car-seats{
+		display: inline-block;
+		padding: 0;
+	}
+	.car-seats__item{
+		display: inline-block;
+		padding: 5px 3px 3px 5px;
+		margin: 0 0 1px 1px;
+		border-radius: 10px;
+		border: 1px solid #B7B7B7;
+	}
+	.car-seats__item:hover::before{
+		display: none;
+	}
+	.car-seats__item-h{
+		font-size: 15px;
+	}
+	.car-seats__item-description{
+		display: none;
+	}
+	.pack-prod{
+		width: 100%;
+	}
+	.slider-info-container{
+		width: 200px;
+		height: 200px;
+		padding: 20px;
+		margin-left: -125px;
+		margin-top: -125px;
+	}
+	.slider-info-container__header{
+		font-size: 40px;
+	}
+	.slider-info-container__info{
+		font-size: 15px;
+	}
+	.modal-window__header{
+		font-size: 18px;
+	}
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 780px) {
+
+}
+@media only screen and (max-width : 768px) {
+	.pack-prod__main-photo{
+		width: 180px;
+		height: 180px;
+	}
+	.pack-prod__gipmaterial-photo{
+		width: 60px;
+		height: 60px;
+	}
+	.header-main{
+		flex-wrap: wrap;
+		justify-content: center;
+		position: relative;
+		background: url(../img/kids_3.png) no-repeat left bottom;
+		background-size: contain;
+	}
+	.header-main__logo{
+		width: 30%;
+	}
+	.header-main__box-contact{
+		position: absolute;
+		top: 2px;
+		right: 5px;
+	}
+	.header-main__text{
+		order: 3;
+		width: 100%;
+		font-size: 25px;
+	}
+	.footer-main{
+		padding: 0 5px;
+	}
+	.footer-main__text{
+		text-align: center;
+	}
+	.footer-main__button-tel{
+		padding: 5px 5px;
+		font-size: 12px;
+	}
+	.footer-main__tel{
+	display: inline-block;
+	text-align: center;
+	font-size: 13px;
+	}
+}
+@media only screen and (max-width : 670px){
+	.modal-window__header{
+		font-size: 15px;
+		padding-left: 15px;
+		padding-right: 30px;
+		text-align: left;
+	}
+	.modal-window__input-header{
+		font-size: 13px;
+		padding-left: 5px;
+	}
+	.modal-window__input-button{
+		font-size: 14px;
+		margin-top: 10px;
+	}
+}
+@media only screen and (max-width : 630px){
+	.header-main__text{
+		margin-top: 3px;
+	}
+	.pack-prod__main-photo{
+		width: 170px;
+		height: 170px;
+	}
+	.pack-prod__gipmaterial-photo{
+		width: 55px;
+		height: 55px;
+	}
+}
+@media only screen and (max-width : 617px){
+	.sorting-price__text{
+		font-size: 15px;
+	}
+	.sorting-price{
+		font-size: 13px;
+	}
+}
+@media only screen and (max-width : 600px){
+	.categories-car-seats__header{
+		font-size: 17px;
+	}
+	.pack-prod__card{
+		width: 47%;
+	}
+	.pack-prod__main-photo{
+		width: 250px;
+		height: 250px;
+	}
+	.pack-prod__gipmaterial-photo{
+		width: 60px;
+		height: 60px;
+	}
+}
+@media only screen and (max-width : 585px) {
+	.header-main__text{
+		font-size: 23px;
+	}
+	.header-main__button-tel{
+		display: none;
+	}
+	.header-main__button-tel_m{
+		display: block;
+	}
+	.header-main__tel{
+		border-bottom: 2px solid red;
+	}
+	.modal-window{
+		min-width: 70%;
+	}
+}
+@media only screen and (max-width : 544px) {
+	.header-main__text{
+		font-size: 18px;
+	}
+	.pack-prod__main-photo{
+		width: 200px;
+		height: 200px;
+	}
+	.pack-prod__gipmaterial-photo{
+		width: 55px;
+		height: 55px;
+	}
+	.slider-info-container{
+		width: 150px;
+		height: 150px;
+		padding: 20px;
+		margin-left: -100px;
+		margin-top: -100px;
+	}
+	.slider-info-container__header{
+		font-size: 30px;
+	}
+	.slider-info-container__info{
+		font-size: 13px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 450px) {
+	.header-main{
+		background: none;
+		flex-direction: columns;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		padding: 0 25px 2px 25px;
+	}
+	.header-main__box-contact{
+		display:none;
+	}
+	.pack-prod__main-photo{
+		width: 180px;
+		height: 180px;
+	}
+	.pack-prod__gipmaterial-photo{
+		width: 50px;
+		height: 50px;
+	}
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 400px) {
+	.pack-prod__main-photo{
+		width: 150px;
+		height: 150px;
+	}
+	.pack-prod__gipmaterial-photo{
+		width: 50px;
+		height: 50px;
+	}
+	.pack-prod__description{
+		font-size: 9px;
+		line-height: 1.1;
+	}
+	.pack-prod__h{
+		font-size: 16px;
+	}
+}
+@media only screen and (max-width : 320px) {
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
