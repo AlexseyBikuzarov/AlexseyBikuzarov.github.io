@@ -1,6 +1,6 @@
 body {
   color: #000;
-  font-family: "Comfortaa", cursive;
+  font-family: RobotoSlabRegular, sans-serif;
   background-color: #fff;
   line-height: 1.2;
   font-size: 14px; }
@@ -27,7 +27,7 @@ body {
   height: 73px; }
 
 .header-main__text {
-  font: 700 23px "Comfortaa", cursive;
+  font: 700 23px RobotoSlabRegular, sans-serif;
   text-align: center;
   margin: 0; }
 
@@ -47,7 +47,7 @@ body {
           align-items: center; }
 
 .header-main__tel {
-  font: 400 25px "Comfortaa", cursive;
+  font: 400 25px RobotoSlabRegular, sans-serif;
   padding-right: 10px; }
 
 .header-main__tel_icon {
@@ -58,7 +58,7 @@ body {
 .header-main__button-tel {
   border: none;
   background: #FFFF00;
-  font: 700 16px "Comfortaa", cursive;
+  font: 700 16px RobotoSlabRegular, sans-serif;
   padding: 8px 20px;
   cursor: pointer; }
   .header-main__button-tel:hover {
@@ -390,7 +390,7 @@ body {
 .pack-prod__more, .pack-prod__buy_m {
   border: none;
   background: #FFFF00;
-  font: 700 16px "Comfortaa", cursive;
+  font: 700 16px RobotoSlabRegular, sans-serif;
   padding: 8px 20px;
   cursor: pointer;
   font-size: 20px;
@@ -456,7 +456,7 @@ body {
 .footer-main__button-tel {
   border: none;
   background: #FFFF00;
-  font: 700 16px "Comfortaa", cursive;
+  font: 700 16px RobotoSlabRegular, sans-serif;
   padding: 8px 20px;
   cursor: pointer;
   background-color: #FFF; }
@@ -542,7 +542,7 @@ body {
 .modal-window__input-button, .basket-modal__input-button {
   border: none;
   background: #FFFF00;
-  font: 700 16px "Comfortaa", cursive;
+  font: 700 16px RobotoSlabRegular, sans-serif;
   padding: 8px 20px;
   cursor: pointer;
   margin-top: 20px;
